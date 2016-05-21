@@ -1,0 +1,22 @@
+1.Why did you need to write a remove method in the SudoKuIterator class even
+  thought your program never actually needs to remove any cells from puzzle?
+
+  In this project, SudokuIterator class implements Iterator interface and 
+  Iterator has three methods, which is hasNext(), next(), and remove(). If this
+  project does not use remove method, we still have to implement this remove
+  method to be stub because of interface.
+
+2.Look at the files in your project directory. Describe what is different about
+  the .class for the SudokuIterator class.
+
+  For this project, we implement an inner class, SudoKuIterator, at Sudoku 
+  class. The file name for SudoKuIterator is Sudoku$SudokuIterator, which 
+  describes that there is a subclass in this class. If a class does not include
+  a subclass or inner class, the file name is only showing the class name, for
+  example, Cell.class.
+
+3.Explain how long it takes your isSolution method to run on different sized 
+  puzzle in terms of Big-O notation. 
+  
+  In my program, it will take oder-N square to check whether the solution is 
+  correct or not because there are two for loop for the method. 
